@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <div class="array-size">
+        <label for="arraySize">Array Size:</label>
+        <input type="range" id="arraySize" min="10" max="100" value="20">
+        <span id="arraySizeValue">20</span>
+    </div>
+    <div class="speed-control">
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="1" max="200" value="100">
+        <span id="speedValue">100ms</span>
+    </div>
+    <div id="container"></div>
+    <div class="controls">
+        <button id="bubbleSort" class="active">Bubble Sort</button>
+        <button id="insertionSort">Insertion Sort</button>
+        <button id="selectionSort">Selection Sort</button>
+        <button onClick="init()" class="init">Initialize Array</button>
+        <button onClick="play()" class="play">Play</button>
+    </div>
+    <div class="stats">
+        <span id="comparisons">Comparisons: 0</span> |
+        <span id="swaps">Swaps: 0</span> |
+        <span id="time">Time: 0.0s</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
