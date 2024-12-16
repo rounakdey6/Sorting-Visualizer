@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function init(){
     if(isAnimating) return
     const size = parseInt (document.getElementById('arraySize').value) 
-     arr = Array(size).fill.map(()=>Math.random())
+     arr = Array(size).fill().map(()=>Math.random())
      resetStats()
      showBars()
 }
